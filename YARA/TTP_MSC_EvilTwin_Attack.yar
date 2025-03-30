@@ -5,6 +5,7 @@ rule TTP_MSC_EvilTwin_Attack {
         date = "2025-03-30"
         reference = "https://attack.mitre.org/techniques/T1036/004/"
         reference = "https://www.trendmicro.com/en_us/research/25/c/cve-2025-26633-water-gamayun.html"
+        reference = "https://github.com/hfiref0x/UACME/blob/master/Source/Kamikaze"
     strings:
         // MSC File Structure Indicators
         $msc_xml_header = "<?xml version=\"1.0\"?><MMC_ConsoleFile" nocase wide ascii
