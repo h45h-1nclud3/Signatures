@@ -13,7 +13,7 @@ rule TTP_MSC_EvilTwin_Attack {
         $msc_binary_tag = "<Binary" nocase wide ascii
 
         // Malicious Patterns
-        $mal_b64encoded_shockwave_flash_ocx = "ocx_streamorstorage" base64wide // Found in base64 encoded data in <Binary> tag
+        $mal_b64encoded_shockwave_flash_ocx = "bwBjAHgAXwBzAHQAcgBlAGEAbQBvAHIAcwB0AG8AcgBhAGcAZQ" //"ocx_streamorstorage" Found in base64 encoded data in <Binary> tag
         $mal_http = "http" nocase wide ascii // Indication of URL
         $mal_shockwave_flash = "Shockwave" nocase wide ascii // Indication of using Shockwave Flash Object
         
